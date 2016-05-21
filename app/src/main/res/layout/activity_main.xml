@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="pravin.bluesoft.hotelapplication.MainActivity"
+    android:background="#E43F3F">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/header"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="My Hotel"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/textView"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Serve food in best quality"
+            android:id="@+id/textView2"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:background="@drawable/spinnerbg"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:padding="16dp"
+            android:hint="Enter Username"
+            android:textColorHint="#ccc"
+            android:textColor="#000" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinnerbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:padding="16dp"
+            android:hint="Enter Password"
+            android:textColorHint="#ccc" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:id="@+id/checkBox"
+            android:textColor="#fff"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/button"
+            android:background="@drawable/buttoneffect"
+            android:textColor="#fff"
+            android:padding="16dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>
